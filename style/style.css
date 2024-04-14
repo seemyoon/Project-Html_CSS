@@ -1,5 +1,105 @@
 @import "reset.css";
 
+
+/*Bohdan*/
+
+
+.container-2 {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 170px;
+}
+
+.container-2__healing {
+    color: #000;
+    /*margin-bottom: 20px;*/
+}
+
+.container-2__text {
+    width: 42.3%;
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 60px;
+}
+
+.container-2__describe {
+    width: 79.5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    font-size: 32px;
+}
+
+.container-2__items {
+    height: 73.4vh;
+    width: 100%;
+
+}
+
+.container-2__subitems-1 {
+    height: 56%;
+    margin-bottom: 30px;
+}
+
+.container-2__subitems-2 {
+    /*min-height: 44%;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-2__subitems-2 > a {
+    text-decoration: none;
+    color: #FF4B32;
+    margin-left: 35px;
+    font-size: 0.5em;
+}
+
+.container-2__healing-subitems {
+    color: #000;
+    text-align: start;
+    font-size: 1em;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.container-2__text-subitems {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 0.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0 30px 20px 30px;
+}
+
+.bean_1 {
+    background: url("../img/bean_1.png") center/cover no-repeat;
+
+}
+
+.bean_2 {
+    background: url("../img/bean_2.png") center/cover no-repeat;
+
+}
+
+.bean_3 {
+    background: url("../img/bean_3.png") center/cover no-repeat;
+}
+
+/*bohdan*/
+
+
 /*Alexandr*/
 /*Section 4 by Alexandr*/
 .container-4 {
