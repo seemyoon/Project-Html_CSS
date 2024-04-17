@@ -3,7 +3,7 @@
 
 /*Bohdan*/
 .container-1 {
-    height: 71.2vh;
+    min-height: 71.2vh;
     width: 100vw;
     background-image: url("../img/coffe.png");
     background-repeat: no-repeat;
@@ -23,9 +23,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /*----------fix-------------*/
-    /*flex-wrap: wrap; !*перенесення*!*/
-    /*----------fix-------------*/
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -42,17 +40,13 @@ nav a {
 .icon_section1 {
     display: flex;
     justify-content: center;
-    /*----------fix-------------*/
-    /*align-items: flex-end; !*текст з іконкою повинен бути внизу*!*/
-    /*----------fix-------------*/
+    align-items: flex-end;
 }
 
-/*----------fix-------------*/
 nav > .icon_section1 > img {
-    /*margin-right: 9px; !*    для іконки потрібен був правий margin*!*/
+    margin-right: 9px;
 }
 
-/*----------fix-------------*/
 
 .red_tex_1 {
     text-decoration: none;
@@ -64,8 +58,7 @@ nav > .icon_section1 > img {
     line-height: 130%;
 }
 
-/* замість div треба взагалі ставити container-1*/
-div .main_text_1 {
+.container-1 .main_text_1 {
     height: 37.6vh;
     width: 39.1vw;
     color: #FFF;
@@ -75,26 +68,25 @@ div .main_text_1 {
     align-items: flex-start;
 }
 
-/*----------fixed----------*/
 
-/*!*але я поклав ще один дів щоб відносно нього задати ширину*!*/
-/*.main-container-1 {*/
-/*    height: 50vh; !*    значення на око, поставиш правильні значення*!*/
-/*    width: 79.5vw; !*    значення на око, поставиш правильні значення но тут здається правильно порахував*!*/
-/*}*/
+.main-container-1 {
+    height: 50vh;
+    width: 79.5vw;
+    margin-bottom: 20px;
+}
 
-/*.main-container-1 .main_text_1 {*/
-/*    height: 37.6vh;*/
-/*    width: 39.1vw;*/
-/*    color: #FFF;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: left;*/
-/*    align-items: flex-start;*/
-/*}*/
 
-/*Відступи зроби сам до height_text і в тебе пропущена перша кавичка в loft_text. Тому у тебе і не підтягнувся текст  :)*/
-/*----------fixed----------*/
+.main-container-1 .main_text_1 {
+    height: 37.6vh;
+    width: 39.1vw;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
 .height_text {
     color: #FFF;
     font-family: "Josefin Sans";
@@ -112,6 +104,8 @@ div .main_text_1 {
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
+    margin-top: 20px;
+
 }
 
 .btn_1 {
@@ -127,6 +121,7 @@ div .main_text_1 {
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
+    margin-top: 50px;
 }
 
 .container-2 {
@@ -570,6 +565,6 @@ footer {
 }
 
 .footer-items-4__healing {
-    margin-bottom: 45.96px;
+    margin-bottom: 46px;
     padding-top: 3px;
 }
